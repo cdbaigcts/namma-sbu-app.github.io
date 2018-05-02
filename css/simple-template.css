@@ -2190,7 +2190,7 @@ p {
     -webkit-transition: background-color 500ms ease;
     transition: background-color 500ms ease;
     color: hsla(0, 0%, 100%, .78);
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .navigation-link:hover {
