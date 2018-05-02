@@ -2181,7 +2181,7 @@ p {
 .banner.inner {
     height: auto;
     padding-top: 20px;
-    padding-bottom: 50px;
+    padding-bottom: 40px;
 }
 
 .navigation-link {
@@ -2241,7 +2241,7 @@ p {
 
 .section {
     position: relative;
-    padding-top: 80px;
+    padding-top: 2px;
     padding-bottom: 80px;
 }
 
