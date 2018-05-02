@@ -2173,8 +2173,8 @@ p {
 
 .banner {
     position: relative;
-    height: 650px;
-    padding-top: 1px;
+    height: 400px;
+    padding-top: 20px;
     background-color: #00c2a2;
 }
 
