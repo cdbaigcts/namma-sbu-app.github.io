@@ -2,18 +2,27 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Namma SBU App</title>
+    <title>Insurance SBU App</title>
     <meta content="Simple is a responsive Webflow template, clean and professional for all type of business."
           name="description">
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <meta content="Webflow" name="generator">
     <link href="css/simple-template.css" rel="stylesheet" type="text/css">
+    
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--BOOTSTRAP-->
+
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
     <script type="text/javascript">WebFont.load({
         google: {
             families: ["Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic", "PT Serif:400,400italic,700,700italic", "Raleway:200,300,regular,500,600,700"]
         }
-    });</script>
+    });
+    </script>
+
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"
             type="text/javascript"></script>
@@ -23,6 +32,7 @@
         n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch")
     }(window, document);
     </script>
+    
     <link href="https://www.cognizant.com/content/dam/cognizant_foundation/images/cognizant_favicon.ico" rel="shortcut icon" type="image/x-icon">
     <style>
         .w-slider-nav-invert > div.w-active {
@@ -60,17 +70,59 @@
         .dropdown-link {
             font-size: 13px;
         }
+
+        /*Scrolling Style*/
+        .div-birthday-scrolling {
+            width: 100px;
+            height: 100px;
+            background:   #fff;       /*#CEE9FB; border-style: solidcolor;*/ 
+            border: 1px solid #CDCBCB;            
+            position: relative;
+            -webkit-animation: mymove infinite; /* Safari 4.0 - 8.0 */
+            -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+            animation: mymove infinite;
+            animation-duration: 4s;
+        }
+
+        .div-congratu-scrolling {
+            width: 400px;
+            height: 15px;
+            color: #337ab7;
+            background:   #fff;       /*#CEE9FB; border-style: solidcolor;*/             
+            position: relative;
+            -webkit-animation: mymove infinite; /* Safari 4.0 - 8.0 */
+            -webkit-animation-duration: 20s; /* Safari 4.0 - 8.0 */
+            animation: mymove infinite;
+            animation-duration: 20s;
+        }
+
+        /* Safari 4.0 - 8.0 */
+        @-webkit-keyframes mymove {
+            from {top: 0px;}
+            to {top: 200px;}
+        }
+
+        @keyframes mymove {
+            from {top: 0px;}
+            to {top: 200px;}
+        }
+        /*Scrolling Style*/
+
+
     </style>
 </head>
 <body>
+
 <div class="scroll-navigation w-hidden-medium w-hidden-small w-hidden-tiny w-nav" data-animation="default"
      data-collapse="medium" data-duration="400" data-ix="display-none-scroll-navigation">
     <div class="w-container"><a class="brand-scroll w-nav-brand" href="/"><img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA3pMD5p4SZWRNEgt2f2TqziCASIs7YwI1r2z3hLXKFOhjV3Mn1g"
             width="150"></a>
+        
+        <!--NIVIGATION-->
         <nav class="w-nav-menu" role="navigation">
-            <a class="navigation-link navigation-scroll w-nav-link"  href="/">Home</a><a
-                class="navigation-link navigation-scroll w-nav-link" href="/about">Our Leaders</a><div data-delay="0" data-hover="1" class="w-dropdown">
+            <a class="navigation-link navigation-scroll w-nav-link"  href="../sbuapp/index.html">Home</a>
+            <a class="navigation-link navigation-scroll w-nav-link" href="/about">Our Leaders</a><div data-delay="0" data-hover="1" class="w-dropdown">
             <div class="navigation-link nav-link w-dropdown-toggle">
                 <div>Initiatives</div>
             </div>
@@ -86,21 +138,26 @@
             </nav>
         </div><a
                 class="navigation-link navigation-scroll w-nav-link" href="/portfolio">Our Clients</a><a
-                class="navigation-link navigation-scroll w-nav-link" href="/blog">Blog</a><a
-                class="navigation-link navigation-scroll w-nav-link" href="/contact">Contact</a></nav>
+                class="navigation-link navigation-scroll w-nav-link" href="../sbuapp/blog.html">Blog</a><a
+                class="navigation-link navigation-scroll w-nav-link" href="/contact">Contact</a>
+        </nav>
+
         <div class="w-nav-button">
             <div class="w-icon-nav-menu"></div>
         </div>
     </div>
 </div>
 <a class="go-top w-inline-block" data-ix="hide-go-top-on-load" href="#top"></a>
+
 <div class="navigation w-nav" data-animation="default" data-collapse="medium" data-duration="400" id="top">
     <div class="w-container"><a class="brand w-nav-brand" href="/"><img
             src="https://www.cognizant.com/content/dam/cognizant_foundation/Dotcomimage/COG-Logo-White.svg"
             width="200"></a>
+
+        <!--NIVIGATION-->       
         <nav class="navigation-menu w-nav-menu" role="navigation">
-            <a class="navigation-link w-nav-link" href="/">Home</a>
-            <a class="navigation-link w-nav-link" href="/about">Our Leaders</a>
+            <a class="navigation-link w-nav-link" href="../sbuapp/index.html">Home</a>
+            <a class="navigation-link w-nav-link" href="../sbuapp/about.html">Our Leaders</a>
             <div data-delay="0" data-hover="1" class="w-dropdown">
                 <div class="navigation-link nav-link w-dropdown-toggle">
                     <div>Initiatives</div>
@@ -117,7 +174,7 @@
                 </nav>
             </div>
             <a class="navigation-link w-nav-link" href="/portfolio">Our Clients</a>
-            <a class="navigation-link w-nav-link" href="/blog">Blog</a>
+            <a class="navigation-link w-nav-link" href="../sbuapp/blog.html">Blog</a>
             <a class="navigation-link w-nav-link" href="/contact">Contact</a>
         </nav>
         <div class="hamburger w-nav-button">
@@ -125,50 +182,207 @@
         </div>
     </div>
 </div>
+
 <div class="banner" data-ix="slide-in-navigation-and-go-top-on-scroll">
-    <div class="dive-center"><h1 class="heading-inner" data-ix="slide-in-heading-inner-on-load"><span
-            class="white-2">Welcome to Namma SBU</span></h1>
+    <div class="dive-center">
+        <h1 class="heading-inner" data-ix="slide-in-heading-inner-on-load">
+            <span class="white-2">Welcome to Insurance SBU</span>
+        </h1>        
         <div class="sub-text-inner" data-ix="slide-in-sub-inner-on-load">One Team, One Dream, One App
-        </div>
-    </div>
-    <div class="triangle"><img sizes="(max-width: 4559px) 100vw, 4559px"
-                                     src="http://uploads.webflow.com/596d18a20c0f096de13f6631/596d18a20c0f096de13f667a_tri.png"
-                                     srcset="http://uploads.webflow.com/596d18a20c0f096de13f6631/596d18a20c0f096de13f667a_tri-p-500x18.png 500w, http://uploads.webflow.com/596d18a20c0f096de13f6631/596d18a20c0f096de13f667a_tri-p-800x28.png 800w, http://uploads.webflow.com/596d18a20c0f096de13f6631/596d18a20c0f096de13f667a_tri-p-1080x38.png 1080w, http://uploads.webflow.com/596d18a20c0f096de13f6631/596d18a20c0f096de13f667a_tri-p-1600x56.png 1600w, http://uploads.webflow.com/596d18a20c0f096de13f6631/596d18a20c0f096de13f667a_tri-p-2000x70.png 2000w, http://uploads.webflow.com/596d18a20c0f096de13f6631/596d18a20c0f096de13f667a_tri-p-2600x91.png 2600w, http://uploads.webflow.com/596d18a20c0f096de13f6631/596d18a20c0f096de13f667a_tri.png 4559w">
+        </div>    
+        <form class="form-inline">
+            <div class="input-group">
+                <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-default">...</button>
+                </div>
+            </div>
+        </form>            
+    </div>    
+    <div class="triangle">            
+        <img sizes="(max-width: 4559px) 100vw, 4559px"
+             src="http://uploads.webflow.com/596d18a20c0f096de13f6631/596d18a20c0f096de13f667a_tri.png"
+             srcset="http://uploads.webflow.com/596d18a20c0f096de13f6631/596d18a20c0f096de13f667a_tri-p-500x18.png 500w, http://uploads.webflow.com/596d18a20c0f096de13f6631/596d18a20c0f096de13f667a_tri-p-800x28.png 800w, http://uploads.webflow.com/596d18a20c0f096de13f6631/596d18a20c0f096de13f667a_tri-p-1080x38.png 1080w, http://uploads.webflow.com/596d18a20c0f096de13f6631/596d18a20c0f096de13f667a_tri-p-1600x56.png 1600w, http://uploads.webflow.com/596d18a20c0f096de13f6631/596d18a20c0f096de13f667a_tri-p-2000x70.png 2000w, http://uploads.webflow.com/596d18a20c0f096de13f6631/596d18a20c0f096de13f667a_tri-p-2600x91.png 2600w, http://uploads.webflow.com/596d18a20c0f096de13f6631/596d18a20c0f096de13f667a_tri.png 4559w">
+    </div>    
 </div>
-</div>
-<section class="section gray in-padding" style="height: 330px;">
-    <div class="w-row">
-        <div class="w-col w-col-7 w-col-stack">
+
+<!--BODY-->
+<section class="section gray in-padding" style="height: 370px;">    
+    <div class="w-row">    
+        <!--CHART, LEARDER SAYS-->    
+        <div class="w-col w-col-6 w-col-stack">            
+            <!--
+                <p>SBU Level Summary</p>                                        
+                <div class="progress">
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                    60% RFP Time Spent
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                    10% Innovation Effort
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
+                    100% Deleivery Health Score
+                    </div>
+                </div>
+            -->
+            <!--LEADER SAYS -->            
             <div class="expert-wrapper w-clearfix">
                 <div class="expert-photo"></div>
                 <div class="expert-content">
                     <h3 class="heading-inner">Our Leader Says</h3>
-                    <p class="paragraph">Lorem ipsum dolor sit amet, nam solum omittam mandamus in. Sit ad malis invenire, vel meliore vivendo pericula eu. Et mei agam percipitur, his cu nullam recusabo suavitate. Aeque iracundia disputationi ea quo. Brute soluta legendos quo ad, ius cu tamquam alterum delicatissimi.</p>
+                    <p class="paragraph">Lorem ipsum - Projecting a no obligation term life insurance quote through AIG Direct is now faster and easier than ever! You can get a personalized, free, and no obligation term life insurance quote in just a few minutes on the phone. It's that easy                        to start helping protect your family's financial future!                                         
+                    </p>
+                </div>
+            </div>                        
+        </div>
+
+        <!--BIRTH DAYS-->    
+        <div class="w-col w-col-2 w-col-stack">
+            <div class="birthday-wrapper w-clearfix">
+                <div class="birthday-content">
+                    <h5 class="heading-inner">Birth Days</h5>                                        
+                    <div class="container">                                                
+                        <div class="div-birthday-scrolling" data-toggle="modal" data-target="#birthdayModalLong">
+                            <div class="panel-body">
+                                <img src="../sbuapp/assets/img/Member01.PNG" width="100" height="70"/>
+                            </div>
+                        </div> 
+                        <br/>  
+                        <div class="div-birthday-scrolling" data-toggle="modal" data-target="#birthdayModalLong">
+                            <div class="panel-body">
+                                <img src="../sbuapp/assets/img/Member01.PNG" width="100" height="70"/>
+                            </div>
+                        </div>
+                        <br/>  
+                        <div class="div-birthday-scrolling" data-toggle="modal" data-target="#birthdayModalLong">
+                            <div class="panel-body">
+                                <img src="../sbuapp/assets/img/Member01.PNG" width="100" height="70"/>
+                            </div>
+                        </div>
+                        <br/>  
+                        <div class="div-birthday-scrolling" data-toggle="modal" data-target="#birthdayModalLong">
+                            <div class="panel-body">
+                                <img src="../sbuapp/assets/img/Member01.PNG" width="100" height="70"/>
+                            </div>
+                        </div>
+                        <br/>  
+                        <div class="div-birthday-scrolling" data-toggle="modal" data-target="#birthdayModalLong">
+                            <div class="panel-body">
+                                <img src="../sbuapp/assets/img/Member01.PNG" width="100" height="70"/>
+                            </div>
+                        </div>                                                
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="w-col w-col-5 w-col-stack">
-            <div class="expert-wrapper w-clearfix">
-                <div class="expert-content">
-                    <h3 class="heading-inner">Latest News</h3>
-                    <div><a href="/news">Lorem ipsum dolor sit amet, quo solet principes in, eam cu exerci.</a></div>
-                    <div><a href="/news">Lorem ipsum dolor sit amet, malis dolorum et per, iudicabit.</a></div>
-                    <div><a href="/news">Lorem ipsum dolor sit amet, ius te sale malorum fabellas. Est no mucius verear percipitur, case.</a></div>
+
+        <!--CONGRATULATIONS-->    
+        <div class="w-col w-col-2 w-col-stack">
+            <div class="congratulation-wrapper w-clearfix">
+                <div class="congratulation-content">
+                    <h5 class="heading-inner">Congratulations</h5>                    
+                    <div class="container">                                                
+                        <div class="div-congratu-scrolling" data-toggle="modal" data-target="#congoModalLong">
+                          Rammie Thakur     
+                        </div> 
+                        <br/>  
+                        <div class="div-congratu-scrolling" data-toggle="modal" data-target="#congoModalLong">
+                           Jimmie Spin     
+                        </div>
+                        <br/>  
+                        <div class="div-congratu-scrolling" data-toggle="modal" data-target="#congoModalLong">
+                           Alsa &amp; Ena 
+                        </div>
+                        <br/>  
+                        <div class="div-congratu-scrolling" data-toggle="modal" data-target="#congoModalLong">
+                           Jaccob Brown
+                        </div>
+                        <br/>  
+                        <div class="div-congratu-scrolling" data-toggle="modal" data-target="#congoModalLong">
+                           Acharya Ram
+                        </div>                                                
+                    </div>              
+                </div>
+            </div>
+        </div>
+
+        <!--BLOG-->    
+        <div class="w-col w-col-2 w-col-stack">
+            <div class="blog-wrapper w-clearfix">
+                <div class="blog-content">
+                        <h5>Blog 
+                            &nbsp;&nbsp;
+                            <a href="../sbuapp/blog.html">
+                                <span class="glyphicon glyphicon-pencil"></span>
+                            </a>                        
+                        </h5>                       
+                        <div><a href="../sbuapp/blog.html">Lorem ipsum dolor sit amet, quo solet principes in, eam cu exerci.</a></div>
+                        <br/>
+                        <div><a href="../sbuapp/blog.html">Lorem ipsum dolor sit amet, malis dolorum et per, iudicabit.</a></div>
+                        </br>
+                        <div><a href="../sbuapp/blog.html">Lorem ipsum dolor sit amet, ius te sale malorum fabellas. Est no mucius verear percipitur, case.</a></div>                    
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+<!--FOOTER-->
 <footer class="footer">
     <div class="center w-container">
         <div class="copy float-left"><p class="copy-2">© 2018 Cognizant</p></div>
     </div>
 </footer>
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
 <script src="https://uploads-ssl.webflow.com/5ae31df3a1f27b4ba404353c/js/webflow.aa8892873.js" type="text/javascript"></script>
 <script src="https://daks2k3a4ib2z.cloudfront.net/596d18a20c0f096de13f6631/js/webflow.f316936d8.js"
         type="text/javascript"></script>
 <!--[if lte IE 9]>
 <script src="//cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+
+
+<!-- Modal Birthday -->
+<div class="modal fade" id="birthdayModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="background-image: url(../sbuapp/assets/img/birthday-background.jpg); height: 380px;"> 
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalLongTitle">Dear Acharya,</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Many many happy returns of this day! We know you work very hard 
+        and we truly appreciate your dedication.<br/> 
+        We hope that you keep up the good work for many years to come!
+      </div>      
+    </div>
+  </div>
+</div>
+
+<!-- Modal Congratulation -->
+<div class="modal fade" id="congoModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="background-image: url(../sbuapp/assets/img/congratulations.jpg); height: 380px;"> 
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalLongTitle">Welldone Acharya,</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        We are so proud on your accomplishment.<br/>
+        We hope that you keep up the good work for many years to come!
+      </div>      
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
+
